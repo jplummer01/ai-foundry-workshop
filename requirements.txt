@@ -5,6 +5,7 @@ azure-ai-inference[opentelemetry]             # Azure AI inference with OpenTele
 azure-ai-evaluation                           # Azure AI model evaluation tools
 azure-ai-contentsafety                        # Azure content safety services
 azure-search-documents                        # Azure AI Search integration
+azure-ai-ml                                   # Azure AI ML integration
 
 # Telemetry and Monitoring
 azure-monitor-opentelemetry                  # Azure Monitor OpenTelemetry integration
