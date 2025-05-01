@@ -78,7 +78,7 @@ async def analyze_medication_stream(info: MedicationInfo):
             yield f"data: {json.dumps({'type': 'message', 'content': 'Thread created and message sent.'})}\n\n"
             
             # Create and start the run
-            run = project_client.agents.create_run(thread_id=thread.id, assistant_id=agent.id)
+            run = project_client.agents.create_run(thread_id=thread.id, agent_id=agent.id)
             logger.info(f"Created run with ID: {run.id}")
             yield f"data: {json.dumps({'type': 'message', 'content': 'Run initiated. Processing...'})}\n\n"
             

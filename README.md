@@ -65,8 +65,8 @@ Before starting the workshop, ensure you have:
    # Unix/Linux/macOS
    curl -LsSf https://astral.sh/uv/install.sh | sh
 
-   # Windows (PowerShell)
-   (Invoke-WebRequest -Uri https://astral.sh/uv/install.ps1 -UseBasicParsing).Content | pwsh
+   # Windows (PowerShell)   
+   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
    ```
 
 3. **Create & activate a virtual environment**:

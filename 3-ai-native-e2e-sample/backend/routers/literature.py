@@ -78,7 +78,7 @@ async def chat_literature(request: Request):
         # Create streaming response
         stream = project_client.agents.create_stream(
             thread_id=thread.id,
-            assistant_id=agent.id,
+            agent_id=agent.id,
             event_handler=LiteratureChatHandler()
         )
         
